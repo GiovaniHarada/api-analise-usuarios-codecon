@@ -1,0 +1,15 @@
+meta {
+  name: InsertUsers
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://localhost:7272/api/users
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  file: @file(C:\Users\giova\Downloads\usuarios.json)
+}
